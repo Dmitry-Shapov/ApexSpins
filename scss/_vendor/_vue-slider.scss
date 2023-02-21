@@ -1,0 +1,235 @@
+/* start vue-slider */
+.vue-slider {
+    margin-left: 4px
+
+    &-process {
+        background-color: var(--color-btn-primary-bg)!important
+    }
+
+    &-mark-step {
+        width: 5px;
+        height: 15px;
+        background: #ccc
+    }
+
+    &-mark-step-active {
+        box-shadow: 0 0 0 2px var(--color-btn-primary-bg)!important
+    }
+
+    &-dot-handle {
+        border-color: var(--color-btn-primary-bg)!important
+    }
+
+    &-disabled &-process {
+        background-color: #a7a7a7
+    }
+
+    &-disabled &-dot-handle {
+        border-color: #a7a7a7
+    }
+
+    &-disabled &-mark-step-active {
+        box-shadow: 0 0 0 2px #a7a7a7
+    }
+
+    &-rail {
+        background-color: #f5f5f5;
+        border-radius: 15px;
+        transition: background-color .3s
+    }
+
+    &:hover &-rail {
+        background-color: #e1e1e1
+    }
+
+    &-process {
+        background-color: #9cd5ff;
+        border-radius: 15px;
+        transition: background-color .3s
+    }
+
+    &:hover &-process {
+        background-color: #69c0ff
+    }
+
+    &-mark-step {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        box-shadow: 0 0 0 2px #e8e8e8;
+        background-color: #fff
+    }
+
+    &-mark-step-active {
+        box-shadow: 0 0 0 2px #9cd5ff
+    }
+
+    &:hover &-mark-step-active {
+        box-shadow: 0 0 0 2px #69c0ff
+    }
+
+    &-mark-label {
+        font-size: 12px;
+        white-space: nowrap
+    }
+
+    &-dot-handle {
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: #fff;
+        border: 2px solid #9cd5ff;
+        box-sizing: border-box;
+        transition: box-shadow .3s,border-color .3s
+    }
+
+    &:hover &-dot-handle {
+        border-color: #69c0ff
+    }
+
+    &-dot-handle-focus {
+        border-color: #36abff;
+        box-shadow: 0 0 0 5px rgba(54,171,255,.2)
+    }
+
+    &-dot-handle:hover,&:hover &-dot-handle-focus,&:hover &-dot-handle:hover {
+        border-color: #36abff
+    }
+    
+    &-dot-handle-disabled {
+        cursor: not-allowed;
+        border-color: #ddd!important
+    }
+
+    &-dot-tooltip {
+        opacity: 0;
+        visibility: hidden;
+        transition: all .3s;
+        &-inner {
+            font-size: 14px;
+            white-space: nowrap;
+            padding: 6px 8px;
+            color: #fff;
+            border-radius: 5px;
+            border-color: rgba(0,0,0,.75);
+            background-color: rgba(0,0,0,.75);
+            box-shadow: 0 2px 8px rgba(0,0,0,.15);
+            transform: scale(.9);
+            transition: transform .3s;
+            &:after {
+                content: "";
+                position: absolute
+            }
+        }
+    }
+
+    &-dot-tooltip-show,&-dot:hover &-dot-tooltip {
+        opacity: 1;
+        visibility: visible
+    }
+
+    &-dot-tooltip-show &-dot-tooltip-inner,&-dot:hover &-dot-tooltip &-dot-tooltip-inner {
+        transform: scale(1)
+    }
+
+
+}
+
+/* End vue-slider */
+
+
+
+.custom-block {
+    border-radius: 5px;
+    background: none!important;
+    color: #515151!important;
+    border: 1px solid #e8e8e8;
+    font-size: 16px; 
+
+    &,&-title {
+        font-weight: 600;
+        margin-bottom: -0.4rem;
+
+    }
+
+    /* &-title{
+        font-weight: 600;
+        margin-bottom: -0.4rem;
+    } */
+
+    &.danger,&.tip,&.warning {
+        padding: .1rem 1.5rem;
+        border-left-width: .5rem;
+        border-left-style: solid;
+        margin: 1rem 0;
+    }
+
+    &.tip {
+        background-color: #f3f5f7;
+        border-color: #42b983
+    }
+
+    &.warning {
+        background-color: rgba(255,229,100,.3);
+        border-color: #e7c000;
+        color: #6b5900
+    }
+
+    &.warning &-title {
+        color: #b29400
+    }
+
+    &.warning a {
+        color: #515151
+    }
+
+    &.danger {
+        background-color: #ffe6e6;
+        border-color: #c00;
+        color: #4d0000
+    }
+
+    &.danger &-title {
+        color: #900
+    }
+
+    &.danger a {
+        color: #515151
+    }
+
+    & p:last-child {
+        margin-top: -1rem;
+        margin-bottom: 0.5rem;
+        font-weight: 400;
+           
+    }
+/* 
+    &.details {
+        display: block;
+        position: relative;
+        border-radius: 2px;
+        margin: 1.6em 0;
+        padding: 1.6em;
+        background-color: #eee
+    } */
+
+    /* &.details h4 {
+        margin-top: 0
+    }
+
+    &.details figure:last-child,&.details p:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0
+    }
+
+    &.details summary {
+        outline: none;
+        cursor: pointer
+    } */
+
+    
+}
+
+
+
