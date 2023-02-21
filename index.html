@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">        
+    <link rel="icon" href="assets/logo-icon.png" type="image">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <title>ApexSpins</title>
+</head>
+<body>
+
+      
+    <div id="app"> 
+        
+    </div>
+    <div class="modal">
+        <form class="form" id="mailForm" name="form">
+          <div class="click-modal" style="cursor: pointer;text-align: right;">
+                <?xml version="1.0" encoding="UTF-8"?><svg width="45" height="45" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="48" height="48" fill="white" fill-opacity="0.01"/><path d="M14 14L34 34" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 34L34 14" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          	<div class="input-box">
+                <input type="text" id="name"  name="name" placeholder="Введите ваше имя"data-reg="^[А-ЯЁ][а-яё]*$">
+            </div>
+          	
+          	<div class="input-box">
+                <input type="text" id="theme"  name="theme" placeholder="Введите тему">
+            </div>
+          
+          	<div class="input-box">
+                <input type="text" id="email" name="email" placeholder="Введите ваш email" data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$">
+            </div>
+          
+          	<div class="input-box message-box">
+                <textarea id="message"  name="message" placeholder="Сообщение"></textarea>
+            </div>
+          	
+            <div>
+                <input class="button-mail" type="submit" id="button" value="Отправить" />
+            </div>
+        </form>
+    </div>
+
+    <script src="js/route.js"></script>
+    <script src="js/router.js"></script>
+    <script type="text/javascript" src="js/libs/jquery.min.js"></script>
+    <script type="text/javascript" src="js/libs/jquery.menu-anchor.js"></script>
+    
+    <script
+      src="https://kit.fontawesome.com/fce9a50d02.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
